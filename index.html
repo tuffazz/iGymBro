@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="iGymBro — The ultimate strength training app for iPhone and Apple Watch. Track workouts, analyze progress, and train smarter.">
+  <meta name="theme-color" content="#07070F">
+  <meta property="og:title" content="iGymBro — Train Smarter. Track Every Rep.">
+  <meta property="og:description" content="The ultimate strength training companion for iPhone and Apple Watch.">
+  <meta property="og:type" content="website">
+  <title>iGymBro — Train Smarter. Track Every Rep.</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============================================================
+     NAVIGATION
+     ============================================================ -->
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">
+      <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="32" height="32" rx="8" fill="#6B63FF"/>
+        <rect x="4" y="14" width="8" height="4" rx="2" fill="white"/>
+        <rect x="20" y="14" width="8" height="4" rx="2" fill="white"/>
+        <rect x="10" y="10" width="12" height="12" rx="2" fill="white" fill-opacity="0.9"/>
+        <rect x="13" y="13" width="6" height="6" rx="1" fill="#6B63FF"/>
+      </svg>
+      <span>iGymBro</span>
+    </a>
+    <div class="nav-actions">
+      <select class="lang-picker" id="langPicker" title="Select language">
+        <option value="en">🇺🇸 English</option>
+        <option value="bg">🇧🇬 Български</option>
+        <option value="de">🇩🇪 Deutsch</option>
+        <option value="es">🇪🇸 Español</option>
+        <option value="fr">🇫🇷 Français</option>
+        <option value="hi">🇮🇳 हिंदी</option>
+        <option value="it">🇮🇹 Italiano</option>
+        <option value="ja">🇯🇵 日本語</option>
+        <option value="ru">🇷🇺 Русский</option>
+        <option value="zh">🇨🇳 中文</option>
+      </select>
+      <a href="#download" class="btn-nav" data-i18n="nav_download">Download</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<section class="hero" id="home">
+  <div class="hero-bg">
+    <div class="hero-glow hero-glow-1"></div>
+    <div class="hero-glow hero-glow-2"></div>
+    <div class="hero-grid"></div>
+  </div>
+  <div class="hero-inner">
+    <div class="hero-text">
+      <div class="hero-badge" data-i18n="hero_badge">Now Available · iPhone &amp; Apple Watch</div>
+      <h1 class="hero-title" data-i18n="hero_title">Train Smarter.<br>Track Every Rep.</h1>
+      <p class="hero-subtitle" data-i18n="hero_subtitle">iGymBro is the ultimate strength training companion. Build custom programs, track workouts in real time, and analyze your progress — all synced to Apple Watch.</p>
+      <div class="hero-ctas">
+        <a href="#" class="btn-appstore">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+          <div class="btn-appstore-text">
+            <span class="btn-appstore-sup" data-i18n="hero_cta">Download on the</span>
+            <span class="btn-appstore-main" data-i18n="hero_cta_store">App Store</span>
+          </div>
+        </a>
+      </div>
+      <p class="hero-note" data-i18n="hero_free">Free · Requires iOS 18.0 or later</p>
+    </div>
+
+    <!-- Device Scene -->
+    <div class="hero-scene">
+      <!-- iPhone — Dashboard -->
+      <div class="phone-frame-outer hero-phone">
+        <div class="phone-silent"></div>
+        <div class="phone-vol-up"></div>
+        <div class="phone-vol-dn"></div>
+        <div class="phone-side-btn"></div>
+        <div class="phone-frame">
+          <div class="phone-di"></div>
+          <div class="phone-screen">
+            <div class="status-bar">
+              <span class="time">9:41</span>
+              <div class="status-icons">
+                <svg viewBox="0 0 17 12"><path d="M1 4h2v8H1zM5 2h2v10H5zM9 0h2v12H9zM13 3h2v9h-2z" fill="currentColor"/></svg>
+                <svg viewBox="0 0 16 12"><path d="M8 2.4C5.1 2.4 2.5 3.6.8 5.5L0 4.6C2 2.5 4.9 1.2 8 1.2s6 1.3 8 3.4l-.8.9C13.5 3.6 10.9 2.4 8 2.4zm0 2.8c-1.9 0-3.6.8-4.8 2L2.4 6.3C3.9 4.9 5.9 4 8 4s4.1.9 5.6 2.3L12.8 7.2C11.6 6 9.9 5.2 8 5.2zm0 2.8c-.9 0-1.8.4-2.4 1L4.8 9C5.6 8.1 6.7 7.6 8 7.6s2.4.5 3.2 1.4L10.4 10C9.8 9.4 8.9 9 8 9z" fill="currentColor"/></svg>
+                <svg viewBox="0 0 25 12"><rect x="0" y="1" width="22" height="10" rx="2" stroke="currentColor" stroke-width="1.2" fill="none"/><rect x="23" y="4" width="2" height="4" rx="1" fill="currentColor"/><rect x="1.5" y="2.5" width="17" height="7" rx="1" fill="currentColor"/></svg>
+              </div>
+            </div>
+            <div class="sc" style="padding-top:8px;">
+              <div class="sc-greeting" style="font-size:13px;padding:0;">Good morning, Alex 👋</div>
+              <!-- Week Calendar -->
+              <div class="sc-week" style="margin-top:2px;">
+                <div class="sc-day"><span class="sc-day-label">M</span><div class="sc-day-dot done"></div></div>
+                <div class="sc-day"><span class="sc-day-label">T</span><div class="sc-day-dot done"></div></div>
+                <div class="sc-day"><span class="sc-day-label">W</span><div class="sc-day-dot rest"></div></div>
+                <div class="sc-day"><span class="sc-day-label">T</span><div class="sc-day-dot done"></div></div>
+                <div class="sc-day"><span class="sc-day-label">F</span><div class="sc-day-dot today" style="font-size:7px;color:#9087FF;display:flex;align-items:center;justify-content:center;">▾</div></div>
+                <div class="sc-day"><span class="sc-day-label">S</span><div class="sc-day-dot"></div></div>
+                <div class="sc-day"><span class="sc-day-label">S</span><div class="sc-day-dot rest"></div></div>
+              </div>
+              <!-- Today Card -->
+              <div class="sc-card">
+                <div class="sc-card-label">TODAY</div>
+                <div class="sc-card-title">Upper Body Strength</div>
+                <div class="sc-card-meta">4 exercises · ~45 min</div>
+                <div class="sc-btn">Start Workout →</div>
+              </div>
+              <!-- Recent -->
+              <div class="sc-section-label" style="margin-top:2px;">RECENT</div>
+              <div class="sc-row">
+                <div><div class="sc-row-name">Legs &amp; Core</div><div class="sc-row-date">Tuesday</div></div>
+                <div class="sc-row-vol">3,840 kg</div>
+              </div>
+              <div class="sc-row">
+                <div><div class="sc-row-name">Full Body</div><div class="sc-row-date">Saturday</div></div>
+                <div class="sc-row-vol">5,120 kg</div>
+              </div>
+            </div>
+          </div>
+          <div class="phone-home"></div>
+        </div>
+      </div>
+
+      <!-- Apple Watch -->
+      <div class="watch-frame-wrap hero-watch" style="position:absolute;bottom:40px;right:-30px;">
+        <div class="watch-crown"></div>
+        <div class="watch-frame">
+          <div class="watch-screen" style="padding:16px 12px 12px;">
+            <div class="ws-time">9:41</div>
+            <div class="ws-ex-name">BENCH PRESS</div>
+            <div class="ws-metric">85</div>
+            <div class="ws-unit">kg</div>
+            <div class="ws-reps">× 8 reps</div>
+            <div class="ws-vital">❤ 142 BPM</div>
+            <div class="ws-btn primary" style="margin-top:4px;">Done</div>
+          </div>
+        </div>
+      </div>
+    </div><!-- /hero-scene -->
+  </div><!-- /hero-inner -->
+</section>
+
+<!-- ============================================================
+     STATS
+     ============================================================ -->
+<section class="stats-section">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item reveal">
+        <div class="stat-value">500+</div>
+        <div class="stat-label" data-i18n="stat_exercises">Exercises</div>
+      </div>
+      <div class="stat-item reveal reveal-delay-1">
+        <div class="stat-value">∞</div>
+        <div class="stat-label" data-i18n="stat_workouts">Workouts Tracked</div>
+      </div>
+      <div class="stat-item reveal reveal-delay-2">
+        <div class="stat-value">10</div>
+        <div class="stat-label" data-i18n="stat_languages">Languages</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FEATURES
+     ============================================================ -->
+<section class="features-section" id="features">
+  <div class="container">
+    <div class="section-eyebrow reveal"><span data-i18n="feat_eyebrow">Features</span></div>
+    <h2 class="section-title reveal" data-i18n="features_title">Everything you need to perform</h2>
+    <p class="section-subtitle reveal" data-i18n="features_subtitle">Built from the ground up for serious athletes.</p>
+    <div class="features-grid">
+      <div class="feature-card reveal reveal-delay-1">
+        <div class="feature-icon">📊</div>
+        <h3 class="feature-title" data-i18n="feat1_title">Smart Dashboard</h3>
+        <p class="feature-desc" data-i18n="feat1_desc">Your weekly training schedule at a glance. See today's workout, pick up a draft session, or start a free workout instantly.</p>
+      </div>
+      <div class="feature-card reveal reveal-delay-2">
+        <div class="feature-icon">⚡</div>
+        <h3 class="feature-title" data-i18n="feat2_title">Live Workout Tracking</h3>
+        <p class="feature-desc" data-i18n="feat2_desc">Log reps, weight, and sets in real time. Heart rate and calories stream live from HealthKit during every session.</p>
+      </div>
+      <div class="feature-card reveal reveal-delay-3">
+        <div class="feature-icon">⏱</div>
+        <h3 class="feature-title" data-i18n="feat3_title">Rest Timer</h3>
+        <p class="feature-desc" data-i18n="feat3_desc">Automatic rest countdowns between sets with haptic feedback. Add time or skip directly from the overlay.</p>
+      </div>
+      <div class="feature-card reveal reveal-delay-1">
+        <div class="feature-icon">📈</div>
+        <h3 class="feature-title" data-i18n="feat4_title">Progress Analytics</h3>
+        <p class="feature-desc" data-i18n="feat4_desc">Volume bar charts, weight progression lines, and personal records with timestamps — all in one place.</p>
+      </div>
+      <div class="feature-card reveal reveal-delay-2">
+        <div class="feature-icon">🏋️</div>
+        <h3 class="feature-title" data-i18n="feat5_title">Exercise Library</h3>
+        <p class="feature-desc" data-i18n="feat5_desc">500+ exercises with muscle groups, equipment types, and instructions. Add your own custom exercises.</p>
+      </div>
+      <div class="feature-card reveal reveal-delay-3">
+        <div class="feature-icon">⌚</div>
+        <h3 class="feature-title" data-i18n="feat6_title">Apple Watch</h3>
+        <p class="feature-desc" data-i18n="feat6_desc">Full workout control from your wrist. Use the Digital Crown for precise rep and weight input.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SCREENSHOTS CAROUSEL
+     ============================================================ -->
+<section class="screenshots-section" id="screenshots">
+  <div class="container">
+    <div class="section-eyebrow reveal"><span data-i18n="screenshots_eyebrow">App Screens</span></div>
+    <h2 class="section-title reveal" data-i18n="screenshots_title">Every screen, perfected.</h2>
+    <p class="section-subtitle reveal" data-i18n="screenshots_subtitle">Built with care, detail, and performance in mind.</p>
+  </div>
+
+  <div class="carousel-wrap">
+    <div class="carousel-track-outer">
+      <div class="carousel-track" id="carouselTrack">
+
+        <!-- Slide 1: Dashboard -->
+        <div class="carousel-slide active">
+          <div class="phone-frame-outer">
+            <div class="phone-silent"></div><div class="phone-vol-up"></div><div class="phone-vol-dn"></div><div class="phone-side-btn"></div>
+            <div class="phone-frame">
+              <div class="phone-di"></div>
+              <div class="phone-screen">
+                <div class="status-bar"><span class="time">9:41</span><div class="status-icons"><svg viewBox="0 0 17 12"><path d="M1 4h2v8H1zM5 2h2v10H5zM9 0h2v12H9zM13 3h2v9h-2z" fill="currentColor"/></svg><svg viewBox="0 0 25 12"><rect x="0" y="1" width="22" height="10" rx="2" stroke="currentColor" stroke-width="1.2" fill="none"/><rect x="23" y="4" width="2" height="4" rx="1" fill="currentColor"/><rect x="1.5" y="2.5" width="17" height="7" rx="1" fill="currentColor"/></svg></div></div>
+                <div class="sc" style="padding-top:4px;">
+                  <div class="sc-greeting">Good morning, Alex 👋</div>
+                  <div class="sc-week">
+                    <div class="sc-day"><span class="sc-day-label">M</span><div class="sc-day-dot done"></div></div>
+                    <div class="sc-day"><span class="sc-day-label">T</span><div class="sc-day-dot done"></div></div>
+                    <div class="sc-day"><span class="sc-day-label">W</span><div class="sc-day-dot rest"></div></div>
+                    <div class="sc-day"><span class="sc-day-label">T</span><div class="sc-day-dot done"></div></div>
+                    <div class="sc-day"><span class="sc-day-label">F</span><div class="sc-day-dot today"></div></div>
+                    <div class="sc-day"><span class="sc-day-label">S</span><div class="sc-day-dot"></div></div>
+                    <div class="sc-day"><span class="sc-day-label">S</span><div class="sc-day-dot rest"></div></div>
+                  </div>
+                  <div class="sc-card">
+                    <div class="sc-card-label">TODAY</div>
+                    <div class="sc-card-title">Upper Body Strength</div>
+                    <div class="sc-card-meta">4 exercises · ~45 min</div>
+                    <div class="sc-btn">Start Workout →</div>
+                  </div>
+                  <div class="sc-section-label">RECENT</div>
+                  <div class="sc-row">
+                    <div><div class="sc-row-name">Legs &amp; Core</div><div class="sc-row-date">Tuesday</div></div>
+                    <div class="sc-row-vol">3,840 kg</div>
+                  </div>
+                  <div class="sc-row">
+                    <div><div class="sc-row-name">Full Body</div><div class="sc-row-date">Saturday</div></div>
+                    <div class="sc-row-vol">5,120 kg</div>
+                  </div>
+                  <div class="sc-row">
+                    <div><div class="sc-row-name">Push Day</div><div class="sc-row-date">Last Monday</div></div>
+                    <div class="sc-row-vol">4,560 kg</div>
+                  </div>
+                </div>
+              </div>
+              <div class="phone-home"></div>
+            </div>
+          </div>
+          <span class="carousel-slide-label" data-i18n="screen1_label">Dashboard</span>
+        </div>
+
+        <!-- Slide 2: Active Workout -->
+        <div class="carousel-slide">
+          <div class="phone-frame-outer">
+            <div class="phone-silent"></div><div class="phone-vol-up"></div><div class="phone-vol-dn"></div><div class="phone-side-btn"></div>
+            <div class="phone-frame">
+              <div class="phone-di"></div>
+              <div class="phone-screen">
+                <div class="status-bar"><span class="time">10:14</span><div class="status-icons"><svg viewBox="0 0 25 12"><rect x="0" y="1" width="22" height="10" rx="2" stroke="currentColor" stroke-width="1.2" fill="none"/><rect x="23" y="4" width="2" height="4" rx="1" fill="currentColor"/><rect x="1.5" y="2.5" width="12" height="7" rx="1" fill="currentColor"/></svg></div></div>
+                <div class="sc" style="padding-top:2px;gap:6px;">
+                  <div class="sc-nav">
+                    <span class="sc-nav-back">‹ Upper Body</span>
+                    <span class="sc-nav-prog">2 / 4</span>
+                  </div>
+                  <!-- Progress bar -->
+                  <div style="height:3px;background:rgba(255,255,255,0.1);border-radius:2px;"><div style="width:50%;height:100%;background:#6B63FF;border-radius:2px;"></div></div>
+                  <div class="sc-ex-name">BENCH PRESS</div>
+                  <div class="sc-set-label">Set 3 of 4</div>
+                  <div class="sc-metric-hero">
+                    <span class="sc-metric-val">85</span>
+                    <span class="sc-metric-unit">kg</span>
+                  </div>
+                  <div class="sc-reps-row">
+                    <div class="sc-adj">−</div>
+                    <div class="sc-reps-txt">× 8 reps</div>
+                    <div class="sc-adj">+</div>
+                  </div>
+                  <div class="sc-set-chips">
+                    <div class="sc-chip done"></div>
+                    <div class="sc-chip done"></div>
+                    <div class="sc-chip active"></div>
+                    <div class="sc-chip"></div>
+                  </div>
+                  <div class="sc-vitals">
+                    <div class="sc-vital"><span class="sc-vital-icon" style="color:#FF5F7E;">❤</span><span class="sc-vital-val">142</span><span class="sc-vital-unit">BPM</span></div>
+                    <div class="sc-vital"><span class="sc-vital-icon">🔥</span><span class="sc-vital-val">312</span><span class="sc-vital-unit">kcal</span></div>
+                  </div>
+                  <div class="sc-complete">Complete Set</div>
+                </div>
+              </div>
+              <div class="phone-home"></div>
+            </div>
+          </div>
+          <span class="carousel-slide-label" data-i18n="screen2_label">Active Workout</span>
+        </div>
+
+        <!-- Slide 3: Rest Timer -->
+        <div class="carousel-slide">
+          <div class="phone-frame-outer">
+            <div class="phone-silent"></div><div class="phone-vol-up"></div><div class="phone-vol-dn"></div><div class="phone-side-btn"></div>
+            <div class="phone-frame">
+              <div class="phone-di"></div>
+              <div class="phone-screen">
+                <div class="status-bar"><span class="time">10:16</span><div class="status-icons"><svg viewBox="0 0 25 12"><rect x="0" y="1" width="22" height="10" rx="2" stroke="currentColor" stroke-width="1.2" fill="none"/><rect x="23" y="4" width="2" height="4" rx="1" fill="currentColor"/><rect x="1.5" y="2.5" width="12" height="7" rx="1" fill="currentColor"/></svg></div></div>
+                <div class="sc" style="align-items:center;padding-top:12px;gap:8px;">
+                  <div class="sc-rest-label">REST</div>
+                  <!-- SVG Ring Timer -->
+                  <div class="sc-timer-ring">
+                    <svg viewBox="0 0 140 140">
+                      <circle cx="70" cy="70" r="58" stroke="rgba(107,99,255,0.15)" stroke-width="10" fill="none"/>
+                      <circle cx="70" cy="70" r="58" stroke="#6B63FF" stroke-width="10" fill="none"
+                        stroke-dasharray="364.4" stroke-dashoffset="121" stroke-linecap="round"
+                        transform="rotate(-90 70 70)"/>
+                      <text x="70" y="68" text-anchor="middle" fill="#F0F0FA" font-size="28" font-weight="800" font-family="-apple-system,sans-serif" letter-spacing="-1">1:22</text>
+                      <text x="70" y="84" text-anchor="middle" fill="#5E5E7A" font-size="10" font-family="-apple-system,sans-serif">remaining</text>
+                    </svg>
+                  </div>
+                  <div class="sc-timer-row" style="width:100%;gap:8px;">
+                    <div class="sc-timer-btn skip">Skip</div>
+                    <div class="sc-timer-btn add">+30 sec</div>
+                  </div>
+                  <div style="width:100%;padding:0 2px;">
+                    <div class="sc-next-label">NEXT SET</div>
+                    <div class="sc-card" style="margin-top:4px;display:flex;align-items:center;justify-content:space-between;">
+                      <div>
+                        <div class="sc-next-ex">Bench Press</div>
+                        <div class="sc-next-detail">85 kg × 8</div>
+                      </div>
+                      <div style="font-size:11px;color:#9087FF;font-weight:600;">Set 4/4</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="phone-home"></div>
+            </div>
+          </div>
+          <span class="carousel-slide-label" data-i18n="screen3_label">Rest Timer</span>
+        </div>
+
+        <!-- Slide 4: Progress -->
+        <div class="carousel-slide">
+          <div class="phone-frame-outer">
+            <div class="phone-silent"></div><div class="phone-vol-up"></div><div class="phone-vol-dn"></div><div class="phone-side-btn"></div>
+            <div class="phone-frame">
+              <div class="phone-di"></div>
+              <div class="phone-screen">
+                <div class="status-bar"><span class="time">9:41</span><div class="status-icons"><svg viewBox="0 0 25 12"><rect x="0" y="1" width="22" height="10" rx="2" stroke="currentColor" stroke-width="1.2" fill="none"/><rect x="23" y="4" width="2" height="4" rx="1" fill="currentColor"/><rect x="1.5" y="2.5" width="17" height="7" rx="1" fill="currentColor"/></svg></div></div>
+                <div class="sc" style="padding-top:4px;">
+                  <div class="sc-greeting" style="font-size:17px;font-weight:800;letter-spacing:-0.5px;">Progress</div>
+                  <div class="sc-tabs">
+                    <div class="sc-tab">W</div>
+                    <div class="sc-tab active">M</div>
+                    <div class="sc-tab">3M</div>
+                    <div class="sc-tab">Y</div>
+                  </div>
+                  <div class="sc-card">
+                    <div class="sc-card-label">TOTAL VOLUME</div>
+                    <div class="sc-metric-row">
+                      <div class="sc-metric-big">48,320 kg</div>
+                      <div class="sc-metric-delta">↑ 12%</div>
+                    </div>
+                    <div class="sc-chart" style="height:50px;margin-top:8px;">
+                      <div class="sc-bar" style="height:55%;"></div>
+                      <div class="sc-bar" style="height:68%;"></div>
+                      <div class="sc-bar" style="height:80%;"></div>
+                      <div class="sc-bar peak" style="height:100%;"></div>
+                    </div>
+                    <div style="display:flex;justify-content:space-between;margin-top:4px;">
+                      <span style="font-size:9px;color:#5E5E7A;">Week 1</span>
+                      <span style="font-size:9px;color:#5E5E7A;">Week 2</span>
+                      <span style="font-size:9px;color:#5E5E7A;">Week 3</span>
+                      <span style="font-size:9px;color:#9087FF;font-weight:700;">Week 4</span>
+                    </div>
+                  </div>
+                  <div class="sc-section-label">PERSONAL RECORDS</div>
+                  <div class="sc-pr-row">
+                    <div>
+                      <div class="sc-pr-name">Bench Press</div>
+                      <div style="font-size:9px;color:#5E5E7A;margin-top:1px;">Nov 18, 2026</div>
+                    </div>
+                    <div style="display:flex;align-items:center;gap:5px;">
+                      <div class="sc-pr-val">95 kg</div>
+                      <div class="sc-pr-badge">🏆</div>
+                    </div>
+                  </div>
+                  <div class="sc-pr-row" style="margin-top:4px;">
+                    <div>
+                      <div class="sc-pr-name">Squat</div>
+                      <div style="font-size:9px;color:#5E5E7A;margin-top:1px;">Nov 14, 2026</div>
+                    </div>
+                    <div style="display:flex;align-items:center;gap:5px;">
+                      <div class="sc-pr-val">120 kg</div>
+                      <div class="sc-pr-badge">🏆</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="phone-home"></div>
+            </div>
+          </div>
+          <span class="carousel-slide-label" data-i18n="screen4_label">Progress</span>
+        </div>
+
+        <!-- Slide 5: Exercise Library -->
+        <div class="carousel-slide">
+          <div class="phone-frame-outer">
+            <div class="phone-silent"></div><div class="phone-vol-up"></div><div class="phone-vol-dn"></div><div class="phone-side-btn"></div>
+            <div class="phone-frame">
+              <div class="phone-di"></div>
+              <div class="phone-screen">
+                <div class="status-bar"><span class="time">9:41</span><div class="status-icons"><svg viewBox="0 0 25 12"><rect x="0" y="1" width="22" height="10" rx="2" stroke="currentColor" stroke-width="1.2" fill="none"/><rect x="23" y="4" width="2" height="4" rx="1" fill="currentColor"/><rect x="1.5" y="2.5" width="17" height="7" rx="1" fill="currentColor"/></svg></div></div>
+                <div class="sc" style="padding-top:4px;">
+                  <div class="sc-greeting" style="font-size:17px;font-weight:800;letter-spacing:-0.5px;">Exercises</div>
+                  <div class="sc-search">
+                    <span class="sc-search-icon">🔍</span>
+                    <span class="sc-search-txt">Search exercises...</span>
+                  </div>
+                  <div class="sc-filter-row">
+                    <div class="sc-filter active">All</div>
+                    <div class="sc-filter">Chest</div>
+                    <div class="sc-filter">Back</div>
+                    <div class="sc-filter">Legs</div>
+                  </div>
+                  <div class="sc-ex-row">
+                    <div class="sc-ex-info"><div class="sc-ex-nm">Bench Press</div><div class="sc-ex-cat">Chest · Barbell</div></div>
+                    <span class="sc-ex-arr">›</span>
+                  </div>
+                  <div class="sc-ex-row">
+                    <div class="sc-ex-info"><div class="sc-ex-nm">Pull-Up</div><div class="sc-ex-cat">Back · Bodyweight</div></div>
+                    <span class="sc-ex-arr">›</span>
+                  </div>
+                  <div class="sc-ex-row">
+                    <div class="sc-ex-info"><div class="sc-ex-nm">Shoulder Press</div><div class="sc-ex-cat">Shoulders · Dumbbell</div></div>
+                    <span class="sc-ex-arr">›</span>
+                  </div>
+                  <div class="sc-ex-row">
+                    <div class="sc-ex-info"><div class="sc-ex-nm">Squat</div><div class="sc-ex-cat">Legs · Barbell</div></div>
+                    <span class="sc-ex-arr">›</span>
+                  </div>
+                  <div class="sc-ex-row">
+                    <div class="sc-ex-info"><div class="sc-ex-nm">Deadlift</div><div class="sc-ex-cat">Back · Barbell</div></div>
+                    <span class="sc-ex-arr">›</span>
+                  </div>
+                </div>
+              </div>
+              <div class="phone-home"></div>
+            </div>
+          </div>
+          <span class="carousel-slide-label" data-i18n="screen5_label">Exercise Library</span>
+        </div>
+
+      </div><!-- /carousel-track -->
+    </div><!-- /carousel-track-outer -->
+
+    <div class="carousel-controls">
+      <button class="carousel-btn" id="prevSlide" aria-label="Previous">‹</button>
+      <div class="carousel-dots">
+        <div class="carousel-dot active"></div>
+        <div class="carousel-dot"></div>
+        <div class="carousel-dot"></div>
+        <div class="carousel-dot"></div>
+        <div class="carousel-dot"></div>
+      </div>
+      <button class="carousel-btn" id="nextSlide" aria-label="Next">›</button>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     APPLE WATCH SECTION
+     ============================================================ -->
+<section class="watch-section" id="watch">
+  <div class="container">
+    <div class="watch-inner">
+      <!-- Watch Mockups -->
+      <div class="watch-devices reveal">
+        <!-- Watch 1: Active Exercise -->
+        <div class="watch-frame-wrap">
+          <div class="watch-crown"></div>
+          <div class="watch-frame">
+            <div class="watch-screen">
+              <div class="ws-time">10:14</div>
+              <div class="ws-ex-name">BENCH PRESS</div>
+              <div class="ws-metric">85</div>
+              <div class="ws-unit">kg</div>
+              <div class="ws-reps">× 8 reps</div>
+              <div class="ws-vital">❤ 142 BPM</div>
+              <div class="ws-crown-hint">↕ Crown to adjust</div>
+              <div class="ws-btn primary">Done</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Watch 2: Rest Timer (elevated) -->
+        <div class="watch-frame-wrap">
+          <div class="watch-crown"></div>
+          <div class="watch-frame" style="background:linear-gradient(160deg,#0F0F1E,#0C0C18);">
+            <div class="watch-screen">
+              <div class="ws-rest-label">REST</div>
+              <svg viewBox="0 0 120 120" width="96" height="96" style="margin:4px 0 0;">
+                <circle cx="60" cy="60" r="48" stroke="rgba(107,99,255,0.15)" stroke-width="8" fill="none"/>
+                <circle cx="60" cy="60" r="48" stroke="#6B63FF" stroke-width="8" fill="none"
+                  stroke-dasharray="301.6" stroke-dashoffset="100" stroke-linecap="round"
+                  transform="rotate(-90 60 60)"/>
+                <text x="60" y="65" text-anchor="middle" fill="#F0F0FA" font-size="22" font-weight="800" font-family="-apple-system,sans-serif" letter-spacing="-0.5">1:22</text>
+              </svg>
+              <div class="ws-btn ghost" style="margin-top:4px;">Skip</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Watch 3: Workout Complete -->
+        <div class="watch-frame-wrap">
+          <div class="watch-crown"></div>
+          <div class="watch-frame" style="background:linear-gradient(160deg,#0A1A14,#0C0C18);">
+            <div class="watch-screen" style="justify-content:center;">
+              <div class="ws-check">✓</div>
+              <div class="ws-done-label">Complete!</div>
+              <div class="ws-done-stats">Upper Body Strength<br>45 min · 312 kcal<br>4 exercises · 16 sets</div>
+              <div class="ws-btn primary" style="margin-top:8px;">Done</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Watch Text -->
+      <div class="watch-text reveal reveal-delay-2">
+        <div class="watch-eyebrow" data-i18n="watch_eyebrow">Apple Watch</div>
+        <h2 class="watch-title" data-i18n="watch_title">Your workout, on your wrist.</h2>
+        <p class="watch-subtitle" data-i18n="watch_subtitle">iGymBro brings full workout control to Apple Watch. Adjust reps and weight with the Digital Crown. Monitor your heart rate. Time your rest — all without touching your phone.</p>
+        <ul class="watch-feats">
+          <li class="watch-feat"><div class="watch-feat-icon">🎛</div><span data-i18n="watch_feat1">Digital Crown input for reps & weight</span></li>
+          <li class="watch-feat"><div class="watch-feat-icon">❤️</div><span data-i18n="watch_feat2">Real-time heart rate from sensor</span></li>
+          <li class="watch-feat"><div class="watch-feat-icon">⏱</div><span data-i18n="watch_feat3">Rest timer with haptic feedback</span></li>
+          <li class="watch-feat"><div class="watch-feat-icon">🔄</div><span data-i18n="watch_feat4">Auto-sync completed sessions to iPhone</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     ANALYTICS SECTION
+     ============================================================ -->
+<section class="analytics-section" id="analytics">
+  <div class="container">
+    <div class="analytics-inner">
+      <!-- Text -->
+      <div class="analytics-text reveal">
+        <div class="watch-eyebrow" style="color:var(--accent-3);" data-i18n="analytics_eyebrow">Analytics</div>
+        <h2 class="analytics-title" data-i18n="analytics_title">See your strength grow.</h2>
+        <p class="analytics-subtitle" data-i18n="analytics_subtitle">Track training volume week by week. Spot weight progression on every lift. Celebrate personal records the moment they happen.</p>
+        <ul class="analytics-feats">
+          <li class="analytics-feat"><div class="analytics-feat-icon">📊</div><span data-i18n="analytics_feat1">Volume bar charts by day, week, or month</span></li>
+          <li class="analytics-feat"><div class="analytics-feat-icon">📈</div><span data-i18n="analytics_feat2">Weight progression lines per exercise</span></li>
+          <li class="analytics-feat"><div class="analytics-feat-icon">🏆</div><span data-i18n="analytics_feat3">Personal records with date and context</span></li>
+        </ul>
+      </div>
+
+      <!-- Analytics Phone Mockup -->
+      <div class="analytics-device reveal reveal-delay-2">
+        <div class="phone-frame-outer">
+          <div class="phone-silent"></div><div class="phone-vol-up"></div><div class="phone-vol-dn"></div><div class="phone-side-btn"></div>
+          <div class="phone-frame">
+            <div class="phone-di"></div>
+            <div class="phone-screen">
+              <div class="status-bar"><span class="time">9:41</span><div class="status-icons"><svg viewBox="0 0 25 12"><rect x="0" y="1" width="22" height="10" rx="2" stroke="currentColor" stroke-width="1.2" fill="none"/><rect x="23" y="4" width="2" height="4" rx="1" fill="currentColor"/><rect x="1.5" y="2.5" width="17" height="7" rx="1" fill="currentColor"/></svg></div></div>
+              <div class="sc" style="padding-top:4px;">
+                <div class="sc-greeting" style="font-size:17px;font-weight:800;letter-spacing:-0.5px;">Progress</div>
+                <!-- Bench Press weight line chart -->
+                <div class="sc-card">
+                  <div class="sc-card-label">BENCH PRESS — WEIGHT PROGRESSION</div>
+                  <div style="position:relative;height:70px;margin-top:8px;">
+                    <svg viewBox="0 0 220 70" preserveAspectRatio="none" style="width:100%;height:100%;">
+                      <defs>
+                        <linearGradient id="lineGrad" x1="0" y1="0" x2="0" y2="1">
+                          <stop offset="0%" stop-color="#6B63FF" stop-opacity="0.4"/>
+                          <stop offset="100%" stop-color="#6B63FF" stop-opacity="0"/>
+                        </linearGradient>
+                      </defs>
+                      <path d="M0 60 L40 52 L80 44 L110 38 L150 28 L190 18 L220 10" stroke="#6B63FF" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M0 60 L40 52 L80 44 L110 38 L150 28 L190 18 L220 10 L220 70 L0 70 Z" fill="url(#lineGrad)"/>
+                      <!-- PR dot -->
+                      <circle cx="220" cy="10" r="4" fill="#FFD54F"/>
+                      <circle cx="220" cy="10" r="7" fill="rgba(255,213,79,0.25)"/>
+                    </svg>
+                  </div>
+                  <div style="display:flex;justify-content:space-between;align-items:center;margin-top:4px;">
+                    <div style="font-size:9px;color:#5E5E7A;">Sep</div>
+                    <div style="font-size:9px;color:#5E5E7A;">Oct</div>
+                    <div style="font-size:9px;color:#5E5E7A;">Nov</div>
+                    <div style="display:flex;align-items:center;gap:3px;"><span style="font-size:9px;color:#FFD54F;font-weight:700;">95 kg 🏆</span></div>
+                  </div>
+                </div>
+                <!-- Volume chart -->
+                <div class="sc-card" style="margin-top:0;">
+                  <div class="sc-card-label">WEEKLY VOLUME</div>
+                  <div class="sc-metric-row" style="margin-top:4px;">
+                    <span class="sc-metric-big">48,320 kg</span>
+                    <span class="sc-metric-delta">↑ 12% vs last month</span>
+                  </div>
+                  <div class="sc-chart" style="margin-top:8px;">
+                    <div class="sc-bar" style="height:48%;"></div>
+                    <div class="sc-bar" style="height:62%;"></div>
+                    <div class="sc-bar" style="height:75%;"></div>
+                    <div class="sc-bar" style="height:58%;"></div>
+                    <div class="sc-bar" style="height:84%;"></div>
+                    <div class="sc-bar peak" style="height:100%;"></div>
+                  </div>
+                </div>
+                <!-- PR list -->
+                <div class="sc-section-label">PERSONAL RECORDS</div>
+                <div class="sc-pr-row">
+                  <div><div class="sc-pr-name">Bench Press</div><div style="font-size:9px;color:#5E5E7A;">Nov 18 · New PR!</div></div>
+                  <div style="display:flex;align-items:center;gap:4px;"><span class="sc-pr-val">95 kg</span><span>🏆</span></div>
+                </div>
+                <div class="sc-pr-row" style="margin-top:4px;">
+                  <div><div class="sc-pr-name">Squat</div><div style="font-size:9px;color:#5E5E7A;">Nov 14</div></div>
+                  <div style="display:flex;align-items:center;gap:4px;"><span class="sc-pr-val">120 kg</span><span>🏆</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="phone-home"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     LANGUAGES
+     ============================================================ -->
+<section class="languages-section" id="languages">
+  <div class="container">
+    <div class="section-eyebrow reveal"><span data-i18n="lang_eyebrow">Worldwide</span></div>
+    <h2 class="section-title reveal" data-i18n="lang_title">Available in 10 Languages</h2>
+    <p class="section-subtitle reveal" data-i18n="lang_subtitle">iGymBro speaks your language — from English and Spanish to Japanese and Hindi.</p>
+    <div class="lang-grid reveal">
+      <div class="lang-pill"><span class="lang-flag">🇺🇸</span>English</div>
+      <div class="lang-pill"><span class="lang-flag">🇧🇬</span>Български</div>
+      <div class="lang-pill"><span class="lang-flag">🇩🇪</span>Deutsch</div>
+      <div class="lang-pill"><span class="lang-flag">🇪🇸</span>Español</div>
+      <div class="lang-pill"><span class="lang-flag">🇫🇷</span>Français</div>
+      <div class="lang-pill"><span class="lang-flag">🇮🇳</span>हिंदी</div>
+      <div class="lang-pill"><span class="lang-flag">🇮🇹</span>Italiano</div>
+      <div class="lang-pill"><span class="lang-flag">🇯🇵</span>日本語</div>
+      <div class="lang-pill"><span class="lang-flag">🇷🇺</span>Русский</div>
+      <div class="lang-pill"><span class="lang-flag">🇨🇳</span>中文</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     DOWNLOAD CTA
+     ============================================================ -->
+<section class="download-section" id="download">
+  <div style="position:relative;z-index:2;">
+    <h2 class="download-title reveal" data-i18n="download_title">Ready to start?</h2>
+    <p class="download-subtitle reveal reveal-delay-1" data-i18n="download_subtitle">Download iGymBro for free and begin your first workout today.</p>
+    <div class="download-ctas reveal reveal-delay-2">
+      <a href="#" class="btn-appstore" style="font-size:16px;padding:16px 28px;">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="26" height="26"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+        <div class="btn-appstore-text">
+          <span class="btn-appstore-sup" data-i18n="download_cta">Download on the</span>
+          <span class="btn-appstore-main" data-i18n="download_cta_store">App Store</span>
+        </div>
+      </a>
+    </div>
+    <p class="download-note reveal reveal-delay-3" data-i18n="download_note">Free · iPhone &amp; Apple Watch · iOS 18+</p>
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-logo">iGymBro</div>
+    <div class="footer-links">
+      <a href="privacy.html" data-i18n="footer_privacy">Privacy Policy</a>
+    </div>
+    <p class="footer-copy">© 2026 iGymBro. <span data-i18n="footer_rights">All rights reserved.</span></p>
+  </div>
+</footer>
+
+<script src="js/locales.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
