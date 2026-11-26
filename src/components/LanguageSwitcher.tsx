@@ -32,12 +32,12 @@ export default function LanguageSwitcher() {
   }, []);
 
   function switchLocale(newLocale: string) {
-    // Replace the current locale segment in the actual URL — works under any basePath
-    // and is reliable for sequential switches (no stale state from usePathname).
-    window.location.href = window.location.pathname.replace(
-      `/${locale}/`,
-      `/${newLocale}/`,
-    );
+    // Derive current locale from the actual URL — avoids any stale hook state.
+    const path = window.location.pathname;
+    const matched = LOCALES.find(({code}) => path.includes(`/${code}/`));
+    if (matched) {
+      window.location.href = path.replace(`/${matched.code}/`, `/${newLocale}/`);
+    }
     setOpen(false);
   }
 
