@@ -2,7 +2,6 @@
 
 import {useState, useRef, useEffect} from "react";
 import {useLocale} from "next-intl";
-import {useRouter, usePathname} from "@/i18n/navigation";
 
 const LOCALES = [
   {code: "en", name: "English"},
@@ -20,8 +19,6 @@ const LOCALES = [
 export default function LanguageSwitcher() {
   const [open, setOpen] = useState(false);
   const locale = useLocale();
-  const router = useRouter();
-  const pathname = usePathname();
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -35,7 +32,12 @@ export default function LanguageSwitcher() {
   }, []);
 
   function switchLocale(newLocale: string) {
-    router.replace(pathname, {locale: newLocale});
+    // Replace the current locale segment in the actual URL — works under any basePath
+    // and is reliable for sequential switches (no stale state from usePathname).
+    window.location.href = window.location.pathname.replace(
+      `/${locale}/`,
+      `/${newLocale}/`,
+    );
     setOpen(false);
   }
 
