@@ -44,12 +44,6 @@ export default function PrivacyPage() {
             <p className="text-sm text-zinc-500">Last updated: November 22, 2026</p>
           </div>
 
-          <p className="text-zinc-300 leading-relaxed mb-8">
-            iGymBro (&quot;the App&quot;) is an independent app. This Privacy
-            Policy explains what information the App collects, how it is used, and
-            your rights regarding your data.
-          </p>
-
           {/* Summary */}
           <section className="mb-10 p-6 rounded-2xl border border-zinc-800 bg-zinc-900">
             <h2 className="text-lg font-bold text-white mb-4">Summary</h2>
