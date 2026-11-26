@@ -278,18 +278,6 @@ export default function PrivacyPage() {
             </p>
           </Section>
 
-          <Section num="9" title="Contact">
-            <p className="text-zinc-400 leading-relaxed">
-              If you have questions about this Privacy Policy, you can reach the
-              us at:
-            </p>
-            <a
-              href="mailto:georgi.penchev@synergygfs.com"
-              className="inline-block mt-3 text-[#007AFF] hover:underline font-medium"
-            >
-              georgi.penchev@synergygfs.com
-            </a>
-          </Section>
         </article>
       </main>
 
