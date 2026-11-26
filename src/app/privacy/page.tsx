@@ -45,7 +45,7 @@ export default function PrivacyPage() {
           </div>
 
           <p className="text-zinc-300 leading-relaxed mb-8">
-            iGymBro (&quot;the App&quot;) is developed by Georgi Penchev. This Privacy
+            iGymBro (&quot;the App&quot;) is an independent app. This Privacy
             Policy explains what information the App collects, how it is used, and
             your rights regarding your data.
           </p>
@@ -281,7 +281,7 @@ export default function PrivacyPage() {
           <Section num="9" title="Contact">
             <p className="text-zinc-400 leading-relaxed">
               If you have questions about this Privacy Policy, you can reach the
-              developer at:
+              us at:
             </p>
             <a
               href="mailto:georgi.penchev@synergygfs.com"
@@ -308,7 +308,7 @@ export default function PrivacyPage() {
             iGymBro
           </Link>
           <p className="text-xs text-zinc-600">
-            © 2026 Georgi Penchev. All rights reserved.
+            © 2026 iGymBro. All rights reserved.
           </p>
         </div>
       </footer>

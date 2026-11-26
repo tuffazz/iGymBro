@@ -686,7 +686,7 @@ export default function HomePage() {
             </nav>
 
             <p className="text-xs text-zinc-600">
-              © 2026 Georgi Penchev. All rights reserved.
+              © 2026 iGymBro. All rights reserved.
             </p>
           </div>
         </div>

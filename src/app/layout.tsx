@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     "offline fitness",
     "personal records",
   ],
-  authors: [{ name: "Georgi Penchev" }],
+  authors: [{ name: "iGymBro" }],
   openGraph: {
     title: "iGymBro — Strength Training Tracker",
     description:
