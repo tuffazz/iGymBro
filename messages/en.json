@@ -1,0 +1,212 @@
+{
+  "metadata": {
+    "title": "iGymBro — Strength Training Tracker for iPhone & Apple Watch",
+    "description": "Build gym programs, log sets from Apple Watch, track PRs and progress. Free. No account. 100% offline.",
+    "privacyTitle": "Privacy Policy — iGymBro",
+    "privacyDescription": "iGymBro Privacy Policy. Your training data stays on your device — no backend server, no cloud sync, no user accounts."
+  },
+  "nav": {
+    "privacy": "Privacy",
+    "download": "Download"
+  },
+  "hero": {
+    "badge": "No Registration Needed · 100% Offline",
+    "h1a": "Your gym.",
+    "h1b": "Your data.",
+    "h1c": "Your wrist.",
+    "subtitle": "The strength training tracker that keeps everything on your device. No account. No subscription. No cloud.",
+    "subtitleEmphasis": "Just lifting.",
+    "requirements": "Requires iOS 17 · watchOS 10"
+  },
+  "appStore": {
+    "badgeTop": "Download on the",
+    "badgeBottom": "App Store",
+    "ariaLabel": "Download iGymBro on the App Store"
+  },
+  "features": {
+    "label": "Features",
+    "heading1": "Everything you need.",
+    "heading2": "Nothing you don't.",
+    "0": {
+      "title": "Train from Your Wrist",
+      "description": "The Apple Watch app lets you log every set without touching your phone. Use the Digital Crown to dial in reps and weight with haptic precision."
+    },
+    "1": {
+      "title": "Automatic Rest Timer",
+      "description": "Complete a set and the rest timer fires immediately — no manual tapping. Pause it, skip it, or add time. You focus on recovering."
+    },
+    "2": {
+      "title": "95 Exercises Ready",
+      "description": "Built-in library of 95 exercises across 14 muscle group categories — chest, back, shoulders, arms, legs, core, cardio and more. Plus unlimited custom exercises."
+    },
+    "3": {
+      "title": "Live Health Metrics",
+      "description": "Real-time heart rate and active calories during your workout via HealthKit. Completed sessions are automatically written to Apple Health."
+    },
+    "4": {
+      "title": "Weekly Program Builder",
+      "description": "Create named workout templates, add exercises with sets and rest times, then assign them to days of the week. Your plan syncs to Apple Watch instantly."
+    },
+    "5": {
+      "title": "Progress Charts & PRs",
+      "description": "Training volume charts and per-exercise weight progression graphs. Personal records for max weight, reps, and volume are detected automatically."
+    }
+  },
+  "iphone": {
+    "label": "iPhone",
+    "heading": "Built for iPhone",
+    "subtitle": "A clean, fast interface designed to stay out of your way while you're training.",
+    "placeholder": "Screenshot placeholders shown above. Replace with actual simulator screenshots before publishing.",
+    "0": {
+      "label": "Dashboard",
+      "description": "Weekly calendar + today's workout",
+      "caption": "See your whole week at a glance. Today's workout is one tap away."
+    },
+    "1": {
+      "label": "Active Workout",
+      "description": "Reps, weight, rest timer & live HR",
+      "caption": "Log every set. The rest timer starts the moment you're done."
+    },
+    "2": {
+      "label": "Progress",
+      "description": "Volume charts + weight progression",
+      "caption": "Volume charts and strength curves. See exactly where you're heading."
+    }
+  },
+  "watch": {
+    "label": "Apple Watch",
+    "heading": "Train from your wrist",
+    "subtitle": "The Apple Watch companion syncs your program automatically and lets you log every set without taking your phone out of your pocket.",
+    "bullet0": "Digital Crown rotates through reps (1–99) with haptic ticks",
+    "bullet1": "Tap to switch Crown focus between reps and weight",
+    "bullet2": "Weight adjusts in 0.5 kg steps for precise dialing",
+    "bullet3": "Live heart rate always visible during workout",
+    "bullet4": "Rest timer fires automatically after each set",
+    "bullet5": "Completed sessions sync to iPhone when back in range",
+    "screen0label": "Workout List",
+    "screen0desc": "Synced from iPhone",
+    "screen1label": "Set Input",
+    "screen1desc": "Digital Crown precision",
+    "screen2label": "Rest Timer",
+    "screen2desc": "Auto-fires after set"
+  },
+  "howItWorks": {
+    "label": "How It Works",
+    "heading": "Up and training in minutes",
+    "step0title": "Build your program",
+    "step0desc": "Open the Program tab and create a workout template. Add exercises from 95 built-in options, set target reps, weight, and rest time. Assign the template to a day of the week.",
+    "step1title": "Start your workout",
+    "step1desc": "Tap Start Workout from the Dashboard or your Watch. Your program loads instantly — no setup, no waiting.",
+    "step2title": "Log sets (iPhone or Watch)",
+    "step2desc": "Complete each set, adjust reps and weight on the fly. The rest timer fires automatically. Skip it or add time — your call. Log everything from your Watch without touching your phone.",
+    "step3title": "Track your progress",
+    "step3desc": "After saving, your volume and strength progression charts update. Personal records are detected automatically. Pull up History to review any past session in full detail."
+  },
+  "privacySection": {
+    "label": "Privacy",
+    "heading": "Your data never leaves your device",
+    "subtitle": "iGymBro was built on a simple principle: your training data belongs to you. No backend. No tracking. No exceptions.",
+    "policyLink": "Read the full Privacy Policy →",
+    "pillar0title": "No backend server",
+    "pillar0desc": "iGymBro makes zero network requests. Everything runs locally on your device using Apple's SwiftData framework.",
+    "pillar1title": "No account required",
+    "pillar1desc": "Zero sign-up friction. Launch the app and start training — no email, no password, no personal information ever collected.",
+    "pillar2title": "No analytics or ads",
+    "pillar2desc": "The app contains no third-party SDKs for analytics, advertising, A/B testing, or crash reporting. None.",
+    "pillar3title": "Watch sync is device-to-device",
+    "pillar3desc": "iPhone and Apple Watch communicate via Apple's WatchConnectivity — a direct, encrypted, peer-to-peer connection. No data passes through any external server."
+  },
+  "faq": {
+    "label": "FAQ",
+    "heading": "Common questions",
+    "0q": "Is iGymBro really free?",
+    "0a": "Yes. iGymBro is free to download with no in-app purchases and no subscription. All features — including the Apple Watch app — are included.",
+    "1q": "Do I need an Apple Watch to use iGymBro?",
+    "1a": "No. The iPhone app is fully self-contained. The Apple Watch companion enhances the experience by letting you log sets from your wrist, but it is entirely optional.",
+    "2q": "What watchOS version is required?",
+    "2a": "The Apple Watch companion requires watchOS 10 or later. The iPhone app requires iOS 17 or later.",
+    "3q": "Does iGymBro sync to iCloud or the internet?",
+    "3a": "No. iGymBro is fully offline. All workout data is stored on your device using Apple's SwiftData framework. Nothing is ever uploaded anywhere.",
+    "4q": "Does HealthKit need to be enabled?",
+    "4a": "No. HealthKit access is optional. If granted, iGymBro displays real-time heart rate and calories during workouts and writes completed sessions to Apple Health. All core features work without it.",
+    "5q": "What languages does iGymBro support?",
+    "5a": "iGymBro is fully localized in 10 languages: English, Bulgarian, Spanish, German, Italian, French, Chinese (Simplified), Japanese, Hindi, and Russian — including all exercise names and instructions."
+  },
+  "cta": {
+    "heading": "Ready to lift smarter?",
+    "subtitle": "Download iGymBro free. Build your first program in minutes. No account, no subscription, no commitment.",
+    "check0": "iPhone iOS 17+",
+    "check1": "Apple Watch watchOS 10+",
+    "check2": "Free · No subscription"
+  },
+  "footer": {
+    "privacyLink": "Privacy Policy",
+    "support": "Support",
+    "appStore": "App Store",
+    "rights": "© 2026 iGymBro. All rights reserved."
+  },
+  "privacyPage": {
+    "back": "← Back",
+    "legal": "Legal",
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated: November 22, 2026",
+    "summaryTitle": "Summary",
+    "summary0": "All data stays on your device. iGymBro does not have a backend server, does not create user accounts, and does not transmit any personal data over the internet.",
+    "summary1": "No third-party tracking. The App contains no analytics SDKs, advertising networks, or crash-reporting services.",
+    "summary2": "HealthKit data is optional. Heart rate and calorie data are only accessed with your explicit permission and are never shared outside of Apple's frameworks.",
+    "s1title": "Data We Collect and Store",
+    "s1intro": "All data is stored locally on your device using Apple's SwiftData framework (on-device SQLite database). Nothing is uploaded to any server.",
+    "s1workoutTitle": "Workout & Training Data",
+    "s1workout0": "Workout templates you create (exercise names, sets, reps, target weights, rest periods)",
+    "s1workout1": "Completed workout sessions (date, duration, exercises performed, actual weights and reps, session notes)",
+    "s1workout2": "Personal records (maximum weight, maximum reps, maximum volume per exercise)",
+    "s1workout3": "Weekly training schedule assignments",
+    "s1workout4": "Custom exercises you create",
+    "s1prefsTitle": "App Preferences",
+    "s1prefs0": "Weight unit preference (kg or lbs)",
+    "s1prefs1": "Rest timer default duration",
+    "s1prefs2": "Display theme (System / Dark / Light)",
+    "s1note": "None of the above ever leaves your device.",
+    "s2title": "Health Data (HealthKit)",
+    "s2intro": "The App integrates with Apple HealthKit solely to enhance your workout experience. This requires your explicit permission, which you can grant or revoke at any time in",
+    "s2introPath": "Settings → Privacy & Security → Health → iGymBro",
+    "s2tableType": "Data Type",
+    "s2tableAccess": "Access",
+    "s2tablePurpose": "Purpose",
+    "s2row0type": "Heart Rate",
+    "s2row0access": "Read",
+    "s2row0purpose": "Display real-time heart rate during active workouts",
+    "s2row1type": "Active Energy Burned",
+    "s2row1access": "Read & Write",
+    "s2row1purpose": "Show calorie burn during workouts; save workout calorie data to Health",
+    "s2row2type": "Workouts",
+    "s2row2access": "Write",
+    "s2row2purpose": "Log completed strength training sessions to your Health app",
+    "s2neverTitle": "HealthKit data is never:",
+    "s2never0": "Uploaded to any server",
+    "s2never1": "Shared with third parties",
+    "s2never2": "Used for advertising or profiling",
+    "s2optional": "HealthKit integration is fully optional. If you decline or revoke HealthKit permission, all core features continue to work normally.",
+    "s3title": "Apple Watch Sync",
+    "s3body": "If you use the Apple Watch companion app, workout templates and your weekly schedule are transferred from your iPhone to your Apple Watch using Apple's WatchConnectivity framework. This is a direct, encrypted, device-to-device connection — data does not pass through any external server. Completed workouts recorded on your Apple Watch are transferred back to your iPhone through the same mechanism.",
+    "s4title": "Local Notifications",
+    "s4body": "The App may request permission to send local notifications for scheduled workout reminders. These notifications are generated entirely on your device — no notification content is sent to any server. You can manage notification permissions in Settings → Notifications → iGymBro.",
+    "s5title": "Data We Do NOT Collect",
+    "s5item0": "No account or registration — the App does not require you to create an account or provide any personal information.",
+    "s5item1": "No location data — the App does not access or use your location.",
+    "s5item2": "No camera or microphone — the App does not access your camera or microphone.",
+    "s5item3": "No contacts or calendar — the App does not access your contacts or calendar.",
+    "s5item4": "No network requests — the App makes no outbound network connections.",
+    "s5item5": "No analytics or advertising — the App contains no third-party SDKs for analytics, advertising, A/B testing, or crash reporting.",
+    "s5item6": "No behavioral tracking — the App does not track how you use it and does not share usage data with anyone.",
+    "s6title": "Data Retention and Deletion",
+    "s6p1": "Your data is retained on your device for as long as you use the App or until you delete it.",
+    "s6p2": "To permanently delete all App data, uninstall iGymBro from your device. This removes the local SwiftData database and all associated workout history, templates, personal records, and preferences.",
+    "s6p3": "To remove workout data from Apple Health, open the Health app and navigate to Browse → Workouts, or go to Settings → Privacy & Security → Health → iGymBro and revoke access.",
+    "s7title": "Children's Privacy",
+    "s7body": "iGymBro does not knowingly collect any information from children under the age of 13. The App collects no personal information from any user, so there is no information to collect from minors either.",
+    "s8title": "Changes to This Policy",
+    "s8body": "If the App's data practices change materially, an updated Privacy Policy will be included in the next App Store release and reflected in the \"Last updated\" date at the top of this page.",
+    "footerRights": "© 2026 iGymBro. All rights reserved."
+  }
+}
