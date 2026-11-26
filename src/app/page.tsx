@@ -252,7 +252,7 @@ export default function HomePage() {
                   className="w-2 h-2 rounded-full"
                   style={{ background: "#007AFF" }}
                 />
-                Free · No Account · 100% Offline
+                No Registration Needed · 100% Offline
               </div>
             </AnimatedSection>
 
