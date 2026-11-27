@@ -19,9 +19,9 @@ export default function WatchMockup({ screenLabel = "", screenDescription = "", 
         }}
       >
         {/* Screen */}
-        <div className="absolute inset-1 rounded-[1.6rem] bg-black overflow-hidden relative">
+        <div className="absolute inset-1 rounded-[1.6rem] bg-black overflow-hidden">
           {src ? (
-            <img src={src} alt={alt} className="absolute inset-0 w-full h-full object-cover" />
+            <img src={src} alt={alt} className="w-full h-full object-cover" />
           ) : (
             <div className="w-full h-full flex flex-col items-center justify-center gap-2 p-3">
               {/* Heart rate line mock */}
