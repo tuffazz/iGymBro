@@ -487,9 +487,6 @@ export default async function HomePage({params}: Props) {
               <Link href="/privacy" className="hover:text-white transition-colors">
                 {tFooter("privacyLink")}
               </Link>
-              <a href="mailto:georgi.penchev@synergygfs.com" className="hover:text-white transition-colors">
-                {tFooter("support")}
-              </a>
               <a href={APP_STORE_URL} target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
                 {tFooter("appStore")}
               </a>
