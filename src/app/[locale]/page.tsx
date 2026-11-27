@@ -86,15 +86,29 @@ export default async function HomePage({params}: Props) {
     description: tFeat(`${i}.description`),
   }));
 
+  const iphoneScreenSrcs = [
+    "/screenshots/iphone/01_Dashboard.png",
+    "/screenshots/iphone/05_Active_Workout.png",
+    "/screenshots/iphone/09_Progress.png",
+  ];
+
   const iphoneScreens = Array.from({length: 3}, (_, i) => ({
     label: tIphone(`${i}.label`),
     description: tIphone(`${i}.description`),
     caption: tIphone(`${i}.caption`),
+    src: iphoneScreenSrcs[i],
   }));
+
+  const watchScreenSrcs = [
+    "/screenshots/watch/01_Watch_Workout_List.png",
+    "/screenshots/watch/02_Watch_Active_Workout.png",
+    "/screenshots/watch/03_Watch_Rest_Timer.png",
+  ];
 
   const watchScreens = Array.from({length: 3}, (_, i) => ({
     label: tWatch(`screen${i}label`),
     description: tWatch(`screen${i}desc`),
+    src: watchScreenSrcs[i],
   }));
 
   const watchBullets = Array.from({length: 6}, (_, i) => tWatch(`bullet${i}`));
@@ -190,10 +204,10 @@ export default async function HomePage({params}: Props) {
                   style={{background: "rgba(0,122,255,0.2)"}}
                 />
                 <div className="transform translate-y-4 sm:translate-y-6">
-                  <WatchMockup screenLabel="Bench Press" screenDescription="Set 2 / 4 · Crown → Reps" />
+                  <WatchMockup src="/screenshots/watch/02_Watch_Active_Workout.png" alt="Apple Watch active workout screen" />
                 </div>
                 <div>
-                  <IPhoneMockup screenLabel="Dashboard" screenDescription="Weekly calendar + today's workout card" />
+                  <IPhoneMockup src="/screenshots/iphone/01_Dashboard.png" alt="iGymBro Dashboard" />
                 </div>
               </div>
             </AnimatedSection>
@@ -244,7 +258,7 @@ export default async function HomePage({params}: Props) {
               {iphoneScreens.map((screen, i) => (
                 <AnimatedSection key={i} delay={i * 0.1} className="flex flex-col items-center">
                   <div className="mb-6">
-                    <IPhoneMockup screenLabel={screen.label} screenDescription={screen.description} />
+                    <IPhoneMockup src={screen.src} alt={screen.label} />
                   </div>
                   <h3 className="text-base font-semibold text-white mb-2 text-center">{screen.label}</h3>
                   <p className="text-sm text-zinc-400 text-center leading-relaxed">{screen.caption}</p>
@@ -252,9 +266,6 @@ export default async function HomePage({params}: Props) {
               ))}
             </div>
 
-            <AnimatedSection className="mt-12 text-center">
-              <p className="text-xs text-zinc-600 italic">{tIphone("placeholder")}</p>
-            </AnimatedSection>
           </div>
         </section>
 
@@ -297,7 +308,7 @@ export default async function HomePage({params}: Props) {
                       className="flex flex-col items-center gap-3"
                       style={{transform: `translateY(${i === 1 ? "-16px" : "0px"})`}}
                     >
-                      <WatchMockup screenLabel={ws.label} screenDescription={ws.description} />
+                      <WatchMockup src={ws.src} alt={ws.label} />
                       <span className="text-xs text-zinc-500 text-center">{ws.label}</span>
                     </div>
                   ))}
