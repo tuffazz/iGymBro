@@ -69,6 +69,8 @@ export default async function HomePage({params}: Props) {
   const {locale} = await params;
   setRequestLocale(locale);
 
+  const BASE = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
   const tHero = await getTranslations({locale, namespace: "hero"});
   const tAS = await getTranslations({locale, namespace: "appStore"});
   const tFeat = await getTranslations({locale, namespace: "features"});
@@ -87,9 +89,9 @@ export default async function HomePage({params}: Props) {
   }));
 
   const iphoneScreenSrcs = [
-    "/screenshots/iphone/01_Dashboard.png",
-    "/screenshots/iphone/05_Active_Workout.png",
-    "/screenshots/iphone/09_Progress.png",
+    `${BASE}/screenshots/iphone/01_Dashboard.png`,
+    `${BASE}/screenshots/iphone/05_Active_Workout.png`,
+    `${BASE}/screenshots/iphone/09_Progress.png`,
   ];
 
   const iphoneScreens = Array.from({length: 3}, (_, i) => ({
@@ -100,9 +102,9 @@ export default async function HomePage({params}: Props) {
   }));
 
   const watchScreenSrcs = [
-    "/screenshots/watch/01_Watch_Workout_List.png",
-    "/screenshots/watch/02_Watch_Active_Workout.png",
-    "/screenshots/watch/03_Watch_Rest_Timer.png",
+    `${BASE}/screenshots/watch/01_Watch_Workout_List.png`,
+    `${BASE}/screenshots/watch/02_Watch_Active_Workout.png`,
+    `${BASE}/screenshots/watch/03_Watch_Rest_Timer.png`,
   ];
 
   const watchScreens = Array.from({length: 3}, (_, i) => ({
@@ -204,10 +206,10 @@ export default async function HomePage({params}: Props) {
                   style={{background: "rgba(0,122,255,0.2)"}}
                 />
                 <div className="transform translate-y-4 sm:translate-y-6">
-                  <WatchMockup src="/screenshots/watch/02_Watch_Active_Workout.png" alt="Apple Watch active workout screen" />
+                  <WatchMockup src={`${BASE}/screenshots/watch/02_Watch_Active_Workout.png`} alt="Apple Watch active workout screen" />
                 </div>
                 <div>
-                  <IPhoneMockup src="/screenshots/iphone/01_Dashboard.png" alt="iGymBro Dashboard" />
+                  <IPhoneMockup src={`${BASE}/screenshots/iphone/01_Dashboard.png`} alt="iGymBro Dashboard" />
                 </div>
               </div>
             </AnimatedSection>

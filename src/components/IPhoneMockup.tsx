@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 interface IPhoneMockupProps {
   screenLabel?: string;
   screenDescription?: string;
@@ -28,7 +26,7 @@ export default function IPhoneMockup({
         }}
       >
         {src ? (
-          <Image src={src} alt={alt} fill style={{objectFit: "cover"}} />
+          <img src={src} alt={alt} className="absolute inset-0 w-full h-full object-cover" />
         ) : (
           <>
             {/* Dynamic Island */}

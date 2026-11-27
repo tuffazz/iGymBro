@@ -9,6 +9,9 @@ const nextConfig: NextConfig = {
   output: "export",
   trailingSlash: true,
   basePath: isProd ? "/iGymBro" : "",
+  env: {
+    NEXT_PUBLIC_BASE_PATH: isProd ? "/iGymBro" : "",
+  },
   images: {
     unoptimized: true,
   },

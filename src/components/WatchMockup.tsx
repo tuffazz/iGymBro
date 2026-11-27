@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 interface WatchMockupProps {
   screenLabel?: string;
   screenDescription?: string;
@@ -23,7 +21,7 @@ export default function WatchMockup({ screenLabel = "", screenDescription = "", 
         {/* Screen */}
         <div className="absolute inset-1 rounded-[1.6rem] bg-black overflow-hidden relative">
           {src ? (
-            <Image src={src} alt={alt} fill style={{objectFit: "cover"}} />
+            <img src={src} alt={alt} className="absolute inset-0 w-full h-full object-cover" />
           ) : (
             <div className="w-full h-full flex flex-col items-center justify-center gap-2 p-3">
               {/* Heart rate line mock */}
